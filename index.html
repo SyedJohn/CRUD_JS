@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onformSubmit();">
+                    <div>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="fullName" id="fullName" >
+                    </div>
+                    <div>
+                        <label for="rollNo">Roll Number</label>
+                        <input type="number" name="rollNo" id="rollNo" >
+                    </div>
+                    <div>
+                        <label for="marks">Marks</label>
+                        <input type="number" name="marks" id="marks" >
+                    </div>
+                    <div>
+                        <label for="branch">Branch</label>
+                        <input type="text" name="branch" id="branch" >
+                    </div>
+                    <div>
+                        <button type="submit" value="Submit">Submit</button>
+                    </div>
+                </form>
+            </td>
+
+            <td style="display: flex;">
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Roll Number</th>
+                            <th>Marks</th>
+                            <th>Branch</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
